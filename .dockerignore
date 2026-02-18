@@ -1,0 +1,50 @@
+# =====================================================
+# .dockerignore - Fichiers à exclure du build Docker
+# =====================================================
+
+# Git
+.git
+.gitignore
+
+# Node modules (sera réinstallé dans le conteneur)
+node_modules
+
+# Tests
+tests/
+playwright-report/
+playwright.config.ts
+*.spec.ts
+
+# Documentation
+README.md
+CONTRIBUTING.md
+LICENSE
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build local
+dist/
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# CI/CD
+.github/
+*.yml
+*.yaml
+
+# Node build cache
+.npm/
+.eslintcache
