@@ -1,8 +1,4 @@
-FROM node:20-alpine AS builder
-
-ENV NODE_ENV=production \
-    REACT_APP_VERSION=1.0.0 \
-    REACT_APP_NAME="Kuberdocker EBIOS"
+FROM node:20 AS builder
 
 WORKDIR /app
 
